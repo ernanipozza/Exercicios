@@ -1,0 +1,59 @@
+.container {
+    max-width: 100%;
+    display: flex;
+    padding: 50px;
+    justify-content: space-around;
+}
+
+.img {
+    height: 200px;
+    width: 200px;
+}
+
+.navbar {
+    display: flex;
+    overflow: hidden;
+    background-color: lightcoral;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.navbarLinks {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 150px;
+    margin: 1px 15px;
+    transition: 300ms;
+}
+
+.navbarLinks:hover {
+    background-color: cornflowerblue;
+}
+
+#navbarDogo {
+    height: 19px;
+    width: 30px;
+    transition: 300ms;
+}
+
+#navbarDogo:hover {
+    background-color: cornflowerblue;
+}
+
+
+#dogo {
+    height: 20px;
+    width: 20px;
+}
+
+footer {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    justify-content: center;
+    background-color: darkgoldenrod;
+}
