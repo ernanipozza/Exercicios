@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercicio01", "Exercicio01", "{86C81D46-24F3-41CC-9E94-5EBC26223B52}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercicio02", "Exercicio02", "{970C0600-75E3-4E82-ACC8-96FE7238F204}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercicio03", "Exercicio03", "{79391204-8D9A-4518-8C59-5ADDDA144C3A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercicio04", "Exercicio04", "{0863D6BF-1605-4292-BF11-80AAC1C826CC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercicio05", "Exercicio05", "{F974E754-AF56-43CB-900D-9F34A6052213}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercicio06", "Exercicio06", "{F13B2682-94BC-4EB2-9A92-22613A444A78}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercicio07", "Exercicio07", "{17E95D4B-5567-415E-8C9C-509ABF6E8FEB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercicio08", "Exercicio08", "{419DFAA6-739B-4EA0-BF63-7211CDF0AD6E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercicio09", "Exercicio09", "{ECF2B429-3644-4B3A-B9A8-8D78814DA538}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercicio10", "Exercicio10", "{7BBA7516-6EE3-41F3-A75E-C2D82F405680}"
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1940B5E3-25E3-49B6-A826-B81D751DAAE6}
+	EndGlobalSection
+EndGlobal
