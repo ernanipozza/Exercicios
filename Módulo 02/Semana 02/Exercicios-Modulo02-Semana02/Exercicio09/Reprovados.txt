@@ -1,0 +1,4 @@
+O aluno Jaozin foi reprovado com a média 2
+O aluno Janice foi reprovado com a média 4
+O aluno Zuleica foi reprovado com a média 4
+O aluno Marluce foi reprovado com a média 3
