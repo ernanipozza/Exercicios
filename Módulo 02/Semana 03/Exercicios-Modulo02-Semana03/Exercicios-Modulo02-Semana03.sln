@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{6ACBF4D4-7FD6-4006-9BA3-0683828F7BC9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "App", "App", "{6C12BD75-2307-4D26-A062-01914AEA829C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{88D4FDF6-7296-4109-A0C8-D7D9D102CE6B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GymAdministration.Core", "GymAdministration.Core\GymAdministration.Core.csproj", "{19F2E554-AE8A-465A-8DCF-7B98DBD93A5F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{B935EE93-6B80-4105-AC32-B45854AFBD33}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{19F2E554-AE8A-465A-8DCF-7B98DBD93A5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19F2E554-AE8A-465A-8DCF-7B98DBD93A5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19F2E554-AE8A-465A-8DCF-7B98DBD93A5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19F2E554-AE8A-465A-8DCF-7B98DBD93A5F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B935EE93-6B80-4105-AC32-B45854AFBD33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B935EE93-6B80-4105-AC32-B45854AFBD33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B935EE93-6B80-4105-AC32-B45854AFBD33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B935EE93-6B80-4105-AC32-B45854AFBD33}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6C12BD75-2307-4D26-A062-01914AEA829C} = {6ACBF4D4-7FD6-4006-9BA3-0683828F7BC9}
+		{88D4FDF6-7296-4109-A0C8-D7D9D102CE6B} = {6ACBF4D4-7FD6-4006-9BA3-0683828F7BC9}
+		{19F2E554-AE8A-465A-8DCF-7B98DBD93A5F} = {88D4FDF6-7296-4109-A0C8-D7D9D102CE6B}
+		{B935EE93-6B80-4105-AC32-B45854AFBD33} = {6C12BD75-2307-4D26-A062-01914AEA829C}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BD2C4AB3-0330-401B-9AD5-405A9CDCEDCF}
+	EndGlobalSection
+EndGlobal
