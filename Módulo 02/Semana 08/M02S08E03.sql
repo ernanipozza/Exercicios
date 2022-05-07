@@ -1,0 +1,61 @@
+CREATE TABLE Cliente (
+	 IdCliente INT PRIMARY KEY IDENTITY (1,1) NOT NULL
+	,Nome VARCHAR (100) NOT NULL
+	,Endereco VARCHAR (200) NOT NULL
+	,Bairro VARCHAR (100) NOT NULL
+	,CEP VARCHAR (10) NOT NULL
+	,Cidade VARCHAR(100) NOT NULL
+	,Estado VARCHAR (50) NOT NULL
+	,Telefone VARCHAR (50) NOT NULL
+)
+
+CREATE TABLE Especie (
+	 IdEspecie INT PRIMARY KEY IDENTITY (1,1) NOT NULL
+	,Descricao VARCHAR (300) NOT NULL
+	,Nome VARCHAR (100) NOT NULL
+)
+
+CREATE TABLE Animal (
+	 IdAnimal INT PRIMARY KEY IDENTITY (1,1) NOT NULL
+	,Nome VARCHAR (100) NOT NULL
+	,Idade INT NOT NULL
+	,Sexo VARCHAR (20) NOT NULL
+	,IdEspecie INT NOT NULL
+	,IdCliente INT NOT NULL
+	,CONSTRAINT fk_IdEspecie FOREIGN KEY (IdEspecie) REFERENCES Especie(IdEspecie)
+	,CONSTRAINT fk_IdCliente FOREIGN KEY (IdCliente) REFERENCES Cliente(IdCliente)
+)
+
+CREATE TABLE Veterinario (
+	 IdVeterinario INT PRIMARY KEY IDENTITY (1,1) NOT NULL
+	,Nome VARCHAR (100) NOT NULL
+	,Endereco VARCHAR (200) NOT NULL
+	,Telefone VARCHAR (50) NOT NULL
+)
+
+CREATE TABLE Consulta (
+	 IdConsulta INT PRIMARY KEY IDENTITY (1,1) NOT NULL
+	,DataConsulta DATETIME NOT NULL
+	,IdAnimal INT NOT NULL
+	,IdVeterinario INT NOT NULL
+	,CONSTRAINT fk_IdAnimal FOREIGN KEY (IdAnimal) REFERENCES Animal(IdAnimal)
+	,CONSTRAINT fk_IdVeterinario FOREIGN KEY (IdVeterinario) REFERENCES Veterinario(IdVeterinario)
+)
+
+CREATE TABLE Exame (
+	 IdExame INT PRIMARY KEY IDENTITY (1,1) NOT NULL
+	,Descricao VARCHAR (300) NOT NULL
+	,IdConsulta INT NOT NULL
+	,CONSTRAINT fk_IdConsulta FOREIGN KEY (IdConsulta) REFERENCES Consulta(IdConsulta)
+)
+
+CREATE TABLE Tratamento (
+	 IdTratamento INT PRIMARY KEY IDENTITY (1,1) NOT NULL
+	,DataInicial DATETIME NOT NULL
+	,DataFinal DATETIME NOT NULL
+	,IdConsulta INT NOT NULL
+	,IdExame INT NOT NULL
+	,Descricao VARCHAR (300) NOT NULL
+	,CONSTRAINT fk_IdConsulta2 FOREIGN KEY (IdConsulta) REFERENCES Consulta(IdConsulta)
+	,CONSTRAINT fk_IdExame FOREIGN KEY (IdExame) REFERENCES Exame(IdExame)
+)

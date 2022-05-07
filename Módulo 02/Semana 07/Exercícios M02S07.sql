@@ -1,0 +1,68 @@
+-- Exercício 02
+CREATE TABLE Sala (
+	 Id INT PRIMARY KEY IDENTITY (1,1) NOT NULL
+	,NumeroSala INT UNIQUE NOT NULL
+	,Andar INT NOT NULL
+)
+
+-- Exercício 03
+CREATE TABLE Medico(
+	 Id INT PRIMARY KEY IDENTITY (1,1) NOT NULL
+	,CRM VARCHAR(15) UNIQUE NOT NULL
+	,Nome VARCHAR(200) NOT NULL
+	,DataNascimento DATETIME
+	,Especialidade VARCHAR(200) NOT NULL
+	,CPF VARCHAR(15) UNIQUE NOT NULL
+	,DataAdmissao DATETIME NOT NULL
+)
+
+-- Exercício 04
+CREATE TABLE PlanoSaude(
+	 Id INT PRIMARY KEY IDENTITY (1,1) NOT NULL
+	,Nome VARCHAR(200) NOT NULL
+	,DataAtivacao DATETIME NOT NULL
+	,DataInativacao DATETIME NULL
+	,Ativo BIT NOT NULL
+)
+
+-- Exercício 05
+CREATE TABLE Paciente(
+	 Id INT PRIMARY KEY IDENTITY (1,1) NOT NULL
+	,RG VARCHAR(15) NOT NULL
+	,Nome VARCHAR(200) NOT NULL
+	,DataNascimento DATETIME NOT NULL
+	,Endereco VARCHAR(300) NULL
+	,IdPlanoSaude INT
+	,CONSTRAINT fk_IdPlanoSaude FOREIGN KEY (IdPlanoSaude) REFERENCES PlanoSaude(Id)
+)
+
+-- Exercício 06
+CREATE TABLE Cargo(
+	 Id INT PRIMARY KEY IDENTITY (1,1) NOT NULL
+	,Nome VARCHAR(200) NOT NULL
+)
+
+-- Exercício 07
+CREATE TABLE Funcionario(
+	 Id INT PRIMARY KEY IDENTITY (1,1) NOT NULL
+	,Matricula VARCHAR(15) UNIQUE NOT NULL
+	,Nome VARCHAR(200) NOT NULL
+	,DataNascimento DATETIME NOT NULL
+	,DataAdmissao DATETIME NOT NULL
+	,IdCargo INT
+	,Salario MONEY NOT NULL
+	,CONSTRAINT fk_IdCargo FOREIGN KEY (IdCargo) REFERENCES Cargo(Id)
+)
+
+-- Exercício 08
+CREATE TABLE Consulta(
+	  Id INT PRIMARY KEY IDENTITY (1,1) NOT NULL
+	 ,DataConsulta DATETIME
+	 ,IdPaciente int
+	 ,IdFuncionario int
+	 ,Relatorio VARCHAR(MAX)
+	 ,PrescricaoRemedio VARCHAR(500)
+	 ,Observacao VARCHAR(300)
+	 ,CONSTRAINT fk_IdPaciente FOREIGN KEY (IdPaciente) REFERENCES Paciente(Id)
+	 ,CONSTRAINT fk_IdFuncionario FOREIGN KEY (IdFuncionario) REFERENCES Funcionario(Id)
+)

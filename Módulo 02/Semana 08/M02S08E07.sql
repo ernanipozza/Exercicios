@@ -1,0 +1,1 @@
+SELECT COUNT(IdAnimal) AS 'Total de Animais Cadastrados' FROM Animal
